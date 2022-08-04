@@ -1,0 +1,41 @@
+/* Project Colors */
+:root {
+    --darkgreen: #0f2f24;
+    --green: #2d4d42;
+    --lightgreen: #718778;
+    --sage: #c4d0cc;
+    --lighttaupe: #ded6d3;
+    --taupe: #b6aeab;
+    --white: #ffffff;
+}
+
+/* Main Page (body) */
+body {
+    font-family: Helvetica;
+    margin: 0;
+    background-color: var(--lighttaupe);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--darkgreen);
+    padding: 0.5em;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: var(--lighttaupe);
+}
+  
+.navbar-nav .nav-link:hover {
+    color: var(--white)
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+/* About */
