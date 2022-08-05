@@ -6,12 +6,13 @@
     --sage: #c4d0cc;
     --lighttaupe: #ded6d3;
     --taupe: #b6aeab;
+    --offwhite: #FEFCF9;
     --white: #ffffff;
 }
 
 /* Main Page (body) */
 body {
-    font-family: Helvetica;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     margin: 0;
     background-color: var(--lighttaupe);
 }
@@ -19,7 +20,7 @@ body {
 /* Navigation Bar */
 .navbar {
     background-color: var(--darkgreen);
-    padding: 0.5em;
+    padding: 0;
 }
 
 .nav-item {
@@ -38,4 +39,77 @@ body {
     border-radius: 50%;
 }
 
-/* About */
+/* Hero Banner */
+.hero-banner {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.hero-banner img{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.text-overlay {
+    position: relative;
+}
+
+.text-overlay figcaption {
+    position: absolute;
+    top:25%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color: var(--green);
+    font-size: 120px;
+}
+
+.text-overlay p {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero-banner .btn {
+    position: absolute;
+    border-radius: 12px;
+    padding: 5px 10px;
+    top: 60%;
+    font-size:25px;
+    font-weight: bold;
+}
+
+.hero-banner .btn-primary {
+    left: 35%;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    color: var(--offwhite);
+}
+
+.hero-banner .btn-secondary {
+    right: 35%;
+    background-color: var(--sage);
+    border: 2px solid var(--green);
+    color: var(--green)
+}
+
+/* Media Queries */
+@media (max-width:1200px){
+    .text-overlay figcaption {
+        font-size: 10vw;
+    }
+
+    .text-overlay p {
+        font-size: 2.5vw
+    }
+
+    .hero-banner .btn {
+        font-size: 2vw;
+    }
+}
