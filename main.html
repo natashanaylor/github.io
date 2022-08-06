@@ -1,53 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natasha Naylor</title>
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="main.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark fixed-top navbar-expand-md">
-        <div class="container-fluid">
-            <!-- NOTE: Edit href links once those are created -->
-            <a href="#hero-banner" class="navbar-brand">
-                <img src="../images/navbarBrand.png" width="60" height="60" alt="navigation bar logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" >
-                <ul class = "navbar-nav">
-                    <li class="nav-item px-md-2"><a href="#" class="nav-link active">About</a></li>
-                    <li class="nav-item px-md-2"><a href="#" class="nav-link">Resume</a></li>
-                    <li class="nav-item px-md-2"><a href="#" class="nav-link">Projects</a></li>
-                    <li class="nav-item px-md-2"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <!-- NOTE: Edit href links once those are created -->
+        <a href="#top" class="navbar-brand">
+          <img
+            src="../images/navbarBrand.png"
+            width="60"
+            height="60"
+            alt="navigation bar logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-md-2">
+              <a href="#about" class="nav-link active">About</a>
+            </li>
+            <li class="nav-item px-md-2">
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item px-md-2">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item px-md-2">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- Navigation Bar End -->
     <!-- Hero Banner -->
-    <div class="container-fluid hero-banner mt-5 pt-3">
-        <h1 class="visually-hidden">Natasha Naylor</h1>
-        <figure class="text-overlay">
-            <img src="../images/oksana-berko-Daonsb-GSUM-unsplash.jpg" alt="hero banner">
-            <figcaption>Hello World</figcaption>
-            <p>Welcome to my first webpage design! Feel free to take a look around.</p>
-            <a href="#" class="btn btn-primary" role="button">Resume</a>
-            <a href="#" class="btn btn-secondary" role="button">Contact</a>
-        </figure>
+    <div class="container-fluid hero-banner">
+      <h1 class="visually-hidden">Natasha Naylor</h1>
+      <figure class="text-overlay">
+        <img
+          src="../images/oksana-berko-Daonsb-GSUM-unsplash.jpg"
+          alt="hero banner"
+        />
+        <figcaption>Hello World</figcaption>
+        <p class="my-1">
+          Welcome to my first webpage design! Feel free to take a look around.
+        </p>
+        <a href="#" class="btn btn-primary" role="button">Resume</a>
+        <a href="#" class="btn btn-secondary" role="button">Contact</a>
+      </figure>
     </div>
     <!-- Hero Banner End -->
-</body>
+    <!-- About Section -->
+    <div class="container about-section">
+      <div class="row">
+        <div class="bio col-12 col-md-8">
+          <h2 class="my-3">Hi, I'm Natasha Naylor</h2>
+          <p>
+            I am currently an undergraduate student at Portland State University
+            working towards my B.S. in computer science. When beginning my
+            academic journey at PSU, I came with the intention of obtaining my
+            degree in hopes of one day becoming a software engineer at a local
+            company. Although I have kept this goal in mind, I've been able to
+            dive deeper into new interests throughout my time in college, such
+            as cybersecurity and web development. In collaboration with my peers
+            through various projects, I’ve been able to gain experience in both
+            front and backend systems. My curiosity and passion for technology
+            and innovation has always been a driving factor for me and I’m
+            always eager for the opportunity to learn more about it!
+          </p>
+        </div>
+        <div class="portrait col-12 col-md-4" id="about">
+          <img
+            src="../images/natasha.jpg"
+            alt="headshot of Natasha Naylor"
+            width="200"
+            height="300"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+    <!-- Resume Section -->
+    <div class="container resume-section">
+      <div class="row accordian accordion-flush skills1" id="accordianFlushOne">
+        <div class="education accordion-item col-12 col-md-4">
+          <h3 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Education
+            </button>
+          </h3>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlush"
+          >
+            <div class="accordion-body">
+              <h3>Portland State University</h3>
+              <p>
+                Bachelor of Science, Computer Science (Graduating Spring 2023)
+              </p>
+              <p>3.97 GPA</p>
+            </div>
+          </div>
+        </div>
+        <div class="languages accordion-item col-12 col-md-4">
+          <h3 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Languages
+            </button>
+          </h3>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlush"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>HTML + CSS</li>
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>SQLite</li>
+                <li>Typescript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skills accordion-item col-12 col-md-4">
+          <h3 class="accordion-header" id="flush-headingThree">
+            <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Practical Skills
+          </button>
+          </h3>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlush"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Proficient with code editors, such as VScode and IntelliJ</li>
+                <li>Proficient with verison control, such as GitHub and GitLab</li>
+                <li>Extensive experience with UNIX/Linux systems</li>
+                <li>Over 8 years of management experience</li>
+                <li>Strong customer service and training abilities</li>
+                <li>Conversational Japanese speaker</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="row skills2">
+        <div class="coursework col-12">
+          <h3>Coursework Highlights</h3>
+          <div class="accordion accordion-flush" id="accordionFlushTwo">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="flushTwo-headingOne">
+                    <button 
+                        class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#flushTwo-collapseOne" 
+                        aria-expanded="false" 
+                        aria-controls="flushTwo-collapseOne">
+                        Elements of Software Engineering
+                    </button>
+                </h3>
+                <div
+                    id="flushTwo-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flushTwo-headingOne"
+                    data-bs-parent="#accordionFlushTwo"
+                >
+                <div class="accordion-body">
+                    <p>
+                        Gained knowledge and experience with practical techniques 
+                        of project development for medium-scale software. Through 
+                        creating a software project utilizing a waterfall method in 
+                        collaboration with a small team of peers, we gained valuable 
+                        experience in the processes of software development, from problem 
+                        specification and design, to implementation, testing, and 
+                        maintenance.
+                    </p>
+                </div>
+            </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

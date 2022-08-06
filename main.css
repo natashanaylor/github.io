@@ -1,115 +1,194 @@
 /* Project Colors */
 :root {
-    --darkgreen: #0f2f24;
-    --green: #2d4d42;
-    --lightgreen: #718778;
-    --sage: #c4d0cc;
-    --lighttaupe: #ded6d3;
-    --taupe: #b6aeab;
-    --offwhite: #FEFCF9;
-    --white: #ffffff;
+  --darkgreen: #0f2f24;
+  --green: #2d4d42;
+  --lightgreen: #718778;
+  --sage: #c4d0cc;
+  --lighttaupe: #ded6d3;
+  --taupe: #b6aeab;
+  --gold: #8d721e;
+  --offwhite: #fefcf9;
+  --white: #ffffff;
 }
 
-/* Main Page (body) */
+/* Entire Page) */
+html {
+  scroll-padding-top: 70px;
+}
+
 body {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    margin: 0;
-    background-color: var(--lighttaupe);
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  margin: 0;
+  background-color: var(--lighttaupe);
+  padding-top: 70px;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: var(--darkgreen);
-    padding: 0;
+  background-color: var(--darkgreen);
+  padding: 0;
 }
 
 .nav-item {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar-nav .nav-link {
-    color: var(--lighttaupe);
+  color: var(--lighttaupe);
 }
-  
+
 .navbar-nav .nav-link:hover {
-    color: var(--white)
+  color: var(--white);
 }
 
 .navbar-brand img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Hero Banner */
 .hero-banner {
-    display: flex;
-    padding: 0;
-    justify-content: center;
+  display: flex;
+  padding: 0;
+  justify-content: center;
 }
 
-.hero-banner img{
-    width: 100%;
-    max-width: 1200px;
+.hero-banner img {
+  width: 100%;
+  max-width: 1200px;
 }
 
 .text-overlay {
-    position: relative;
+  position: relative;
+  margin-bottom: 8px;
 }
 
 .text-overlay figcaption {
-    position: absolute;
-    top:25%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-family: 'Brush Script MT', cursive;
-    color: var(--green);
-    font-size: 120px;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  color: var(--green);
+  font-size: 120px;
 }
 
 .text-overlay p {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    font-size: 30px;
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
 }
 
 .hero-banner .btn {
-    position: absolute;
-    border-radius: 12px;
-    padding: 5px 10px;
-    top: 60%;
-    font-size:25px;
-    font-weight: bold;
+  position: absolute;
+  border-radius: 12px;
+  padding: 5px 10px;
+  top: 60%;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .hero-banner .btn-primary {
-    left: 35%;
-    background-color: var(--green);
-    border: 2px solid var(--green);
-    color: var(--offwhite);
+  left: 35%;
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  color: var(--offwhite);
 }
 
 .hero-banner .btn-secondary {
-    right: 35%;
-    background-color: var(--sage);
-    border: 2px solid var(--green);
-    color: var(--green)
+  right: 35%;
+  background-color: var(--sage);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.hero-banner .btn-primary:hover {
+  background-color: var(--darkgreen);
+  border: 2px solid var(--darkgreen);
+}
+
+.hero-banner .btn-secondary:hover {
+  background-color: var(--green);
+  color: var(--offwhite);
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 1200px;
+  background-color: var(--sage);
+}
+
+.about-section .bio {
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: cal(15px + 0.390625vw);
+}
+
+.about-section .bio h2 {
+  color: var(--darkgreen);
+  text-align: center;
+  text-decoration: underline overline var(--green) solid 2px;
+}
+
+.about-section img {
+  order: 0;
+  width: 150px;
+  height: 250px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px double var(--gold);
+  margin: 0 auto;
+}
+
+/* Resume Section */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 1200px;
+}
+
+.resume-section .skills1 {
 }
 
 /* Media Queries */
-@media (max-width:1200px){
-    .text-overlay figcaption {
-        font-size: 10vw;
-    }
+@media (min-width: 768px) {
+  .about-section .portrait {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
-    .text-overlay p {
-        font-size: 2.5vw
-    }
+  .about-section .bio {
+    order: 0;
+  }
 
-    .hero-banner .btn {
-        font-size: 2vw;
-    }
+  .about-section img {
+    order: 1;
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text-overlay figcaption {
+    font-size: 11.5vw;
+  }
+
+  .text-overlay p {
+    font-size: 2.5vw;
+  }
+
+  .hero-banner .btn {
+    font-size: 2vw;
+  }
 }
