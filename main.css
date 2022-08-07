@@ -154,11 +154,45 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 2%;
+  /* padding: 2%; */
   max-width: 1200px;
 }
 
-.resume-section .skills1 {
+.resume-section h3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--darkgreen);
+  background-color: var(--taupe);
+  border-radius: 10% / 50%;
+  opacity: 80%;
+}
+
+.accordion-item {
+  padding: 0;
+  background-color: var(--offwhite);
+}
+
+.accordion-button {
+  font-size: inherit;
+  background-color: var(--offwhite);
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: var(--sage);
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(20%);
+}
+
+.accordion-button:focus {
+  box-shadow: inherit;
 }
 
 /* Media Queries */

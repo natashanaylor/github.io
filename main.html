@@ -9,17 +9,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="main.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
+    <a id="top"></a>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark fixed-top navbar-expand-md">
       <div class="container-fluid">
@@ -74,13 +70,13 @@
         <p class="my-1">
           Welcome to my first webpage design! Feel free to take a look around.
         </p>
-        <a href="#" class="btn btn-primary" role="button">Resume</a>
+        <a href="#resume" class="btn btn-primary" role="button">Resume</a>
         <a href="#" class="btn btn-secondary" role="button">Contact</a>
       </figure>
     </div>
     <!-- Hero Banner End -->
     <!-- About Section -->
-    <div class="container about-section">
+    <div class="container about-section" id="about">
       <div class="row">
         <div class="bio col-12 col-md-8">
           <h2 class="my-3">Hi, I'm Natasha Naylor</h2>
@@ -98,7 +94,7 @@
             always eager for the opportunity to learn more about it!
           </p>
         </div>
-        <div class="portrait col-12 col-md-4" id="about">
+        <div class="portrait col-12 col-md-4">
           <img
             src="../images/natasha.jpg"
             alt="headshot of Natasha Naylor"
@@ -110,10 +106,11 @@
     </div>
     <!-- About Section End -->
     <!-- Resume Section -->
-    <div class="container resume-section">
-      <div class="row accordian accordion-flush skills1" id="accordianFlushOne">
+    <div class="container resume-section section1" id="resume">
+      <h3 class="py-3 mt-2">Resume</h3>
+      <div class="row accordion accordion-flush skills1" id="accordionFlushOne">
         <div class="education accordion-item col-12 col-md-4">
-          <h3 class="accordion-header" id="flush-headingOne">
+          <h4 class="accordion-header" id="flush-headingOne">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -124,15 +121,15 @@
             >
               Education
             </button>
-          </h3>
+          </h4>
           <div
             id="flush-collapseOne"
             class="accordion-collapse collapse"
             aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlush"
+            data-bs-parent="#accordionFlushOne"
           >
             <div class="accordion-body">
-              <h3>Portland State University</h3>
+              <h5>Portland State University</h5>
               <p>
                 Bachelor of Science, Computer Science (Graduating Spring 2023)
               </p>
@@ -141,7 +138,7 @@
           </div>
         </div>
         <div class="languages accordion-item col-12 col-md-4">
-          <h3 class="accordion-header" id="flush-headingTwo">
+          <h4 class="accordion-header" id="flush-headingTwo">
             <button
               class="accordion-button collapsed"
               type="button"
@@ -152,12 +149,12 @@
             >
               Languages
             </button>
-          </h3>
+          </h4>
           <div
             id="flush-collapseTwo"
             class="accordion-collapse collapse"
             aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlush"
+            data-bs-parent="#accordionFlushOne"
           >
             <div class="accordion-body">
               <ul>
@@ -174,76 +171,142 @@
           </div>
         </div>
         <div class="skills accordion-item col-12 col-md-4">
-          <h3 class="accordion-header" id="flush-headingThree">
+          <h4 class="accordion-header" id="flush-headingThree">
             <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
-          >
-            Practical Skills
-          </button>
-          </h3>
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Practical Skills
+            </button>
+          </h4>
           <div
             id="flush-collapseThree"
             class="accordion-collapse collapse"
             aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlush"
+            data-bs-parent="#accordionFlushOne"
           >
             <div class="accordion-body">
               <ul>
-                <li>Proficient with code editors, such as VScode and IntelliJ</li>
-                <li>Proficient with verison control, such as GitHub and GitLab</li>
+                <li>
+                  Proficient with code editors, such as VScode and IntelliJ
+                </li>
+                <li>
+                  Proficient with verison control, such as GitHub and GitLab
+                </li>
                 <li>Extensive experience with UNIX/Linux systems</li>
                 <li>Over 8 years of management experience</li>
                 <li>Strong customer service and training abilities</li>
                 <li>Conversational Japanese speaker</li>
               </ul>
             </div>
-        </div>
-      </div>
-      <div class="row skills2">
-        <div class="coursework col-12">
-          <h3>Coursework Highlights</h3>
-          <div class="accordion accordion-flush" id="accordionFlushTwo">
-            <div class="accordion-item">
-                <h3 class="accordion-header" id="flushTwo-headingOne">
-                    <button 
-                        class="accordion-button collapsed" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#flushTwo-collapseOne" 
-                        aria-expanded="false" 
-                        aria-controls="flushTwo-collapseOne">
-                        Elements of Software Engineering
-                    </button>
-                </h3>
-                <div
-                    id="flushTwo-collapseOne"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flushTwo-headingOne"
-                    data-bs-parent="#accordionFlushTwo"
-                >
-                <div class="accordion-body">
-                    <p>
-                        Gained knowledge and experience with practical techniques 
-                        of project development for medium-scale software. Through 
-                        creating a software project utilizing a waterfall method in 
-                        collaboration with a small team of peers, we gained valuable 
-                        experience in the processes of software development, from problem 
-                        specification and design, to implementation, testing, and 
-                        maintenance.
-                    </p>
-                </div>
-            </div>
-
-            </div>
           </div>
-          
         </div>
       </div>
     </div>
+    <div class="container resume-section section2">
+      <h3 class="py-3 mt-2">Coursework Highlights</h3>
+      <div class="row accordion accordion-flush skills2" id="accordionFlushTwo">
+        <div class="course1 accordion-item col-12">
+          <h4 class="accordion-header" id="flushTwo-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flushTwo-collapseOne"
+              aria-expanded="false"
+              aria-controls="flushTwo-collapseOne"
+            >
+              Elements of Software Engineering
+            </button>
+          </h4>
+          <div
+            id="flushTwo-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flushTwo-headingOne"
+            data-bs-parent="accordionFlushTwo"
+          >
+            <div class="accordion-body">
+              <p>
+                Gained knowledge and experience with practical techniques of
+                project development for medium-scale software. Through creating
+                a software project utilizing a waterfall method in collaboration
+                with a small team of peers, we gained valuable experience in the
+                processes of software development, from problem specification
+                and design, to implementation, testing, and maintenance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="course2 accordion-item col-12">
+          <h4 class="accordion-header" id="flushTwo-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flushTwo-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flushTwo-collapseTwo"
+            >
+              Algorithms & Complexity
+            </button>
+          </h4>
+          <div
+            id="flushTwo-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flushTwo-headingTwo"
+            data-bs-parent="accordionFlushTwo"
+          >
+            <div class="accordion-body">
+              <p>
+                Developed techniques for the design and analysis of algorithms.
+                Analyzed and implemented various existing algorithms such as
+                sorting, searching, graph algorithms, dynamic programming, and
+                backtracking. Implementations were carried out using Python 3.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="course3 accordion-item col-12">
+          <h4 class="accordion-header" id="flushTwo-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flushTwo-collapseThree"
+              aria-expanded="false"
+              aria-controls="flushTwo-collapseThree"
+            >
+              Intro to Web Development
+            </button>
+          </h4>
+          <div
+            id="flushTwo-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flushTwo-headingThree"
+            data-bs-parent="accordionFlushTwo"
+          >
+            <div class="accordion-body">
+              <p>
+                An introductory course of various web languages, frameworks,
+                techniques, and skills required in becoming a web developer.
+                Gained experience with HTML, CSS, and Javascript, as well as CSS
+                frameworks such as Bootstrap. The skills learned throughout this
+                course were used to build a personal portfolio website. (You’re
+                here now!)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
