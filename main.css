@@ -55,11 +55,13 @@ body {
 .hero-banner img {
   width: 100%;
   max-width: 1200px;
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
 }
 
 .text-overlay {
   position: relative;
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .text-overlay figcaption {
@@ -123,6 +125,8 @@ body {
   padding: 2%;
   max-width: 1200px;
   background-color: var(--sage);
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
 }
 
 .about-section .bio {
@@ -138,24 +142,24 @@ body {
   text-decoration: underline overline var(--green) solid 2px;
 }
 
-.about-section img {
-  order: 0;
-  width: 150px;
-  height: 250px;
-  display: block;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 5px double var(--gold);
-  margin: 0 auto;
-}
-
 /* Resume Section */
 .resume-section {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  /* padding: 2%; */
+  position: relative;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+}
+
+.resume-section .section1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  padding: 2% 4%;
 }
 
 .resume-section h3 {
@@ -165,10 +169,10 @@ body {
   font-family: 'Brush Script MT', cursive;
   font-size: 3rem;
   text-align: center;
-  color: var(--darkgreen);
-  background-color: var(--taupe);
-  border-radius: 10% / 50%;
-  opacity: 80%;
+  color: var(--white);
+  background-color: var(--darkgreen);
+  border-radius: 5px 20px 5px;
+  opacity: 95%;
 }
 
 .accordion-item {
@@ -193,6 +197,62 @@ body {
 
 .accordion-button:focus {
   box-shadow: inherit;
+}
+
+.accordion-body {
+  font-size: cal(15px + 0.390625vw);
+}
+
+/* Projects Section */
+.projects {
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 1200px;
+  background-color: var(--sage);
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+}
+
+.projects h3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--darkgreen);
+  background-color: var(--offwhite);
+  border-radius: 20px 5px 20px;
+  opacity: 80%;
+}
+
+.carousel-item img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px double var(--gold);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects h4 {
+  text-align: center;
+}
+
+.projects a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: var(--offwhite);
+  color: var(--darkgreen);
+  font-weight: bold;
+  border-radius: 20px 5px 20px;
+}
+
+.projects p {
+  font-size: cal(15px + 0.390625vw);
+  width: 80%;
+  text-align: center;
 }
 
 /* Media Queries */

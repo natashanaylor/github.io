@@ -9,10 +9,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="main.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <a id="top"></a>
@@ -64,7 +63,7 @@
       <figure class="text-overlay">
         <img
           src="../images/oksana-berko-Daonsb-GSUM-unsplash.jpg"
-          alt="hero banner"
+          alt="banner photo of a blank paper bordered with eucalyptus"
         />
         <figcaption>Hello World</figcaption>
         <p class="my-1">
@@ -94,213 +93,280 @@
             always eager for the opportunity to learn more about it!
           </p>
         </div>
-        <div class="portrait col-12 col-md-4">
-          <img
-            src="../images/natasha.jpg"
-            alt="headshot of Natasha Naylor"
-            width="200"
-            height="300"
-          />
-        </div>
+        <div class="portrait col-12 col-md-4"></div>
       </div>
     </div>
     <!-- About Section End -->
     <!-- Resume Section -->
-    <div class="container resume-section section1" id="resume">
-      <h3 class="py-3 mt-2">Resume</h3>
-      <div class="row accordion accordion-flush skills1" id="accordionFlushOne">
-        <div class="education accordion-item col-12 col-md-4">
-          <h4 class="accordion-header" id="flush-headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
+    <div class="resume-section" id="resume">
+      <div class="container section1">
+        <h3 class="py-3 mt-2">Resume</h3>
+        <div
+          class="row accordion accordion-flush skills1"
+          id="accordionFlushOne"
+        >
+          <div class="education accordion-item col-12 col-md-4">
+            <h4 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Education
+              </button>
+            </h4>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushOne"
             >
-              Education
-            </button>
-          </h4>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushOne"
-          >
-            <div class="accordion-body">
-              <h5>Portland State University</h5>
-              <p>
-                Bachelor of Science, Computer Science (Graduating Spring 2023)
-              </p>
-              <p>3.97 GPA</p>
+              <div class="accordion-body">
+                <h5>Portland State University</h5>
+                <p>
+                  Bachelor of Science, Computer Science (Graduating Spring 2023)
+                </p>
+                <p>3.97 GPA</p>
+              </div>
+            </div>
+          </div>
+          <div class="languages accordion-item col-12 col-md-4">
+            <h4 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Languages
+              </button>
+            </h4>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>HTML + CSS</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>SQLite</li>
+                  <li>Typescript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="skills accordion-item col-12 col-md-4">
+            <h4 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Practical Skills
+              </button>
+            </h4>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    Proficient with code editors, such as VScode and IntelliJ
+                  </li>
+                  <li>
+                    Proficient with verison control, such as GitHub and GitLab
+                  </li>
+                  <li>Extensive experience with UNIX/Linux systems</li>
+                  <li>Over 8 years of management experience</li>
+                  <li>Strong customer service and training abilities</li>
+                  <li>Conversational Japanese speaker</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="languages accordion-item col-12 col-md-4">
-          <h4 class="accordion-header" id="flush-headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
+        <h3 class="py-3 mt-4">Coursework Highlights</h3>
+        <div
+          class="row accordion accordion-flush skills2"
+          id="accordionFlushTwo"
+        >
+          <div class="course1 accordion-item col-12">
+            <h4 class="accordion-header" id="flushTwo-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flushTwo-collapseOne"
+                aria-expanded="false"
+                aria-controls="flushTwo-collapseOne"
+              >
+                Elements of Software Engineering
+              </button>
+            </h4>
+            <div
+              id="flushTwo-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flushTwo-headingOne"
+              data-bs-parent="#accordionFlushTwo"
             >
-              Languages
-            </button>
-          </h4>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushOne"
-          >
-            <div class="accordion-body">
-              <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>HTML + CSS</li>
-                <li>Java</li>
-                <li>Javascript</li>
-                <li>Python</li>
-                <li>SQLite</li>
-                <li>Typescript</li>
-              </ul>
+              <div class="accordion-body">
+                <p>
+                  Gained knowledge and experience with practical techniques of
+                  project development for medium-scale software. Through
+                  creating a software project utilizing a waterfall method in
+                  collaboration with a small team of peers, we gained valuable
+                  experience in the processes of software development, from
+                  problem specification and design, to implementation, testing,
+                  and maintenance.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skills accordion-item col-12 col-md-4">
-          <h4 class="accordion-header" id="flush-headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
+          <div class="course2 accordion-item col-12">
+            <h4 class="accordion-header" id="flushTwo-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flushTwo-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flushTwo-collapseTwo"
+              >
+                Algorithms & Complexity
+              </button>
+            </h4>
+            <div
+              id="flushTwo-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flushTwo-headingTwo"
+              data-bs-parent="#accordionFlushTwo"
             >
-              Practical Skills
-            </button>
-          </h4>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlushOne"
-          >
-            <div class="accordion-body">
-              <ul>
-                <li>
-                  Proficient with code editors, such as VScode and IntelliJ
-                </li>
-                <li>
-                  Proficient with verison control, such as GitHub and GitLab
-                </li>
-                <li>Extensive experience with UNIX/Linux systems</li>
-                <li>Over 8 years of management experience</li>
-                <li>Strong customer service and training abilities</li>
-                <li>Conversational Japanese speaker</li>
-              </ul>
+              <div class="accordion-body">
+                <p>
+                  Developed techniques for the design and analysis of
+                  algorithms. Analyzed and implemented various existing
+                  algorithms such as sorting, searching, graph algorithms,
+                  dynamic programming, and backtracking. Implementations were
+                  carried out using Python 3.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="course3 accordion-item col-12">
+            <h4 class="accordion-header" id="flushTwo-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flushTwo-collapseThree"
+                aria-expanded="false"
+                aria-controls="flushTwo-collapseThree"
+              >
+                Intro to Web Development
+              </button>
+            </h4>
+            <div
+              id="flushTwo-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flushTwo-headingThree"
+              data-bs-parent="#accordionFlushTwo"
+            >
+              <div class="accordion-body">
+                <p>
+                  An introductory course of various web languages, frameworks,
+                  techniques, and skills required in becoming a web developer.
+                  Gained experience with HTML, CSS, and Javascript, as well as
+                  CSS frameworks such as Bootstrap. The skills learned
+                  throughout this course were used to build a personal portfolio
+                  website. (You’re here now!)
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container resume-section section2">
-      <h3 class="py-3 mt-2">Coursework Highlights</h3>
-      <div class="row accordion accordion-flush skills2" id="accordionFlushTwo">
-        <div class="course1 accordion-item col-12">
-          <h4 class="accordion-header" id="flushTwo-headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flushTwo-collapseOne"
-              aria-expanded="false"
-              aria-controls="flushTwo-collapseOne"
-            >
-              Elements of Software Engineering
-            </button>
-          </h4>
-          <div
-            id="flushTwo-collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="flushTwo-headingOne"
-            data-bs-parent="accordionFlushTwo"
-          >
-            <div class="accordion-body">
-              <p>
-                Gained knowledge and experience with practical techniques of
-                project development for medium-scale software. Through creating
-                a software project utilizing a waterfall method in collaboration
-                with a small team of peers, we gained valuable experience in the
-                processes of software development, from problem specification
-                and design, to implementation, testing, and maintenance.
-              </p>
-            </div>
+    <!-- Resume Section End -->
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+      <h3 class="my-2">Projects</h3>
+      <div
+        class="carousel carousel-dark slide"
+        id="projectsCarousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/chocAn.jpg" alt="chocAn project illustration" />
+            <h4 class="mt-4 mb-3">
+              <a href="https://github.com/jonathantnguyen/ChocAnApplication"
+                >ChocAn</a
+              >
+            </h4>
+            <p class="mx-auto">
+              Chocoholics Anonymous (ChocAn) is a data processing software that
+              aims to aid in the delivery and recording of healthcare services
+              for individuals battling chocolate addiction. This software
+              provides a comprehensible interface for healthcare providers to
+              record healthcare services administered to those registered with
+              the ChocAn network.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../images/sudoku.jpg"
+              alt="solbe my sudoku project illustration"
+            />
+            <h4 class="mt-4 mb-3">
+              <a href="https://github.com/natashanaylor/CS350-HWsolutions"
+                >Solve My Sudoku!</a
+              >
+            </h4>
+            <p class="mx-auto">
+              Have you ever been tired of struggling over your sudoku puzzle and
+              just wanted the answer already? Solve My Sudoku is a simple
+              project created in my Algorithms & Complexity course that aims to
+              do just that. Simply enter in your unsolved sudoku puzzle in the
+              form of a 9x9 matrix and you’ll have your perfect solution in
+              seconds!
+            </p>
           </div>
         </div>
-        <div class="course2 accordion-item col-12">
-          <h4 class="accordion-header" id="flushTwo-headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flushTwo-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flushTwo-collapseTwo"
-            >
-              Algorithms & Complexity
-            </button>
-          </h4>
-          <div
-            id="flushTwo-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="flushTwo-headingTwo"
-            data-bs-parent="accordionFlushTwo"
-          >
-            <div class="accordion-body">
-              <p>
-                Developed techniques for the design and analysis of algorithms.
-                Analyzed and implemented various existing algorithms such as
-                sorting, searching, graph algorithms, dynamic programming, and
-                backtracking. Implementations were carried out using Python 3.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="course3 accordion-item col-12">
-          <h4 class="accordion-header" id="flushTwo-headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flushTwo-collapseThree"
-              aria-expanded="false"
-              aria-controls="flushTwo-collapseThree"
-            >
-              Intro to Web Development
-            </button>
-          </h4>
-          <div
-            id="flushTwo-collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="flushTwo-headingThree"
-            data-bs-parent="accordionFlushTwo"
-          >
-            <div class="accordion-body">
-              <p>
-                An introductory course of various web languages, frameworks,
-                techniques, and skills required in becoming a web developer.
-                Gained experience with HTML, CSS, and Javascript, as well as CSS
-                frameworks such as Bootstrap. The skills learned throughout this
-                course were used to build a personal portfolio website. (You’re
-                here now!)
-              </p>
-            </div>
-          </div>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#projectsCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#projectsCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
     <script
