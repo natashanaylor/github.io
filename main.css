@@ -364,12 +364,6 @@ body {
     order: 0;
   }
 
-  .about-section img {
-    order: 1;
-    width: 200px;
-    height: 300px;
-  }
-
   .contact-info-name {
     padding: 0 1rem 0 0;
   }

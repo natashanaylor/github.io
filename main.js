@@ -7,8 +7,8 @@ const displayImg = () => {
     img.style.display = "block";
     img.style.order = "0";
     img.style.margin = "0 auto";
-    img.style.width = "150px";
-    img.style.height = "250px";
+    img.style.width = "225px";
+    img.style.height = "300px";
     img.style.border = "5px double var(--gold)";
     img.style.borderRadius = "50%";
 
