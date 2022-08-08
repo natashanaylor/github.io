@@ -250,7 +250,7 @@ body {
 .projects a {
   padding: 10px;
   text-decoration: none;
-  background-color: var(--darkgreen);
+  background-color: var(--green);
   color: var(--offwhite);
   font-weight: bold;
   border-radius: 20px 5px 20px;
@@ -274,6 +274,85 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%238d721e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
+/* Contact Form */
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 1200px;
+  background-color: var(--offwhite);
+  border-left: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+}
+
+.contact h3 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--offwhite);
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 5px 20px 5px;
+}
+
+.contact-form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-size: 1.5rem;
+  color: var(--darkgreen);
+}
+
+.contact-info-name,
+.contact-info-email,
+.message-area {
+  padding: 0;
+}
+
+.form-element {
+  width: 100%;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.contact .btn-primary,
+.contact .btn-secondary {
+  width: 40%;
+  font-size: 1rem;
+}
+
+.contact .btn-primary {
+  border-radius: 5px 20px 5px;
+  background-color: var(--green);
+  border: 4px solid var(--darkgreen);
+  color: var(--offwhite);
+  font-weight: bold;
+}
+
+.contact .btn-primary:hover {
+  background-color: var(--darkgreen);
+}
+
+.contact .btn-secondary {
+  border-radius: 20px 5px 20px;
+  background-color: var(--sage);
+  border: 4px solid var(--gold);
+  color: var(--darkgreen);
+  font-weight: bold;
+}
+
+.contact .btn-secondary:hover {
+  background-color: var(--gold);
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   .about-section .portrait {
@@ -289,6 +368,14 @@ body {
     order: 1;
     width: 200px;
     height: 300px;
+  }
+
+  .contact-info-name {
+    padding: 0 1rem 0 0;
+  }
+
+  .contact-info-email {
+    padding: 0 0 0 1rem;
   }
 }
 

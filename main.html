@@ -70,7 +70,7 @@
           Welcome to my first webpage design! Feel free to take a look around.
         </p>
         <a href="#resume" class="btn btn-primary" role="button">Resume</a>
-        <a href="#" class="btn btn-secondary" role="button">Contact</a>
+        <a href="#contact" class="btn btn-secondary" role="button">Contact</a>
       </figure>
     </div>
     <!-- Hero Banner End -->
@@ -316,7 +316,9 @@
           <div class="carousel-item active">
             <img src="../images/chocAn.jpg" alt="chocAn project illustration" />
             <h4 class="mt-4 mb-3">
-              <a href="https://github.com/jonathantnguyen/ChocAnApplication"
+              <a
+                href="https://github.com/jonathantnguyen/ChocAnApplication"
+                target="_blank"
                 >ChocAn</a
               >
             </h4>
@@ -335,7 +337,9 @@
               alt="solbe my sudoku project illustration"
             />
             <h4 class="mt-4 mb-3">
-              <a href="https://github.com/natashanaylor/CS350-HWsolutions"
+              <a
+                href="https://github.com/natashanaylor/CS350-HWsolutions"
+                target="_blank"
                 >Solve My Sudoku!</a
               >
             </h4>
@@ -369,6 +373,51 @@
         </button>
       </div>
     </div>
+    <!-- Projects Section End-->
+    <!-- Contact Form -->
+    <div class="container contact py-4" id="contact">
+      <form action="" class="contact-form">
+        <h3>Get in touch</h3>
+        <div class="row mt-4">
+          <div class="contact-info-name col-12 col-md-6 mb-3">
+            <label for="full-name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-element"
+              name="full-name"
+              id="full-name"
+              placeholder="Full name"
+            />
+          </div>
+          <div class="contact-info-email col-12 col-md-6 mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-element"
+              name="email"
+              id="email"
+              placeholder="hello@me.com"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="message-area col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="3"
+              class="form-element message"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-btn mt-2">
+          <input type="submit" class="btn-primary" value="Submit" />
+          <input type="reset" class="btn-secondary" value="Reset" />
+        </div>
+      </form>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
